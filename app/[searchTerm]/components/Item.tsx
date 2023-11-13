@@ -6,12 +6,12 @@ type Props = {
 
 export default function Item({ result }: Props) {
   const itemTextCol = (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center bg-slate-300 rounded-sm p-2">
       <h2>
         <Link
           href={`https://en.wikipedia.org/?curid=${result.pageid}`}
           target="_blank"
-          className="text-xl font-bold underline"
+          className="text-xl font-bold underline hover:text-slate-500"
         >
           {result.title}
         </Link>
